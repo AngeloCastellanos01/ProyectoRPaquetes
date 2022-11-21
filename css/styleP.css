@@ -1,0 +1,132 @@
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+  -webkit-transition: opacity 400ms ease-in;
+-moz-transition: opacity 400ms ease-in;
+transition: opacity 400ms ease-in;
+}
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+.close:hover { background: #00d9ff; }
+
+  /* ---------- LOGIN ---------- */
+  
+  #login form{
+      width: 250px;
+  }
+  #login, .logo{
+      display:inline-block;
+      width:40%;
+  }
+  #login{
+  border-right:1px solid rgba(255, 255, 255, 0);
+    padding: 0px 22px;
+    width: 59%;
+  }
+  .logo{
+  color:#fff;
+  font-size:50px;
+    line-height: 125px;
+  }
+  
+  #login form span.fa {
+      background-color: #fff;
+      border-radius: 3px 0px 0px 3px;
+      color: #000;
+      display: block;
+      float: left;
+      height: 50px;
+      font-size:24px;
+      line-height: 50px;
+      text-align: center;
+      width: 50px;
+  }
+  
+  #login form input {
+      height: 50px;
+  }
+  fieldset{
+      padding:0;
+      border:0;
+      margin: 0;
+  
+  }
+  #login form input[type="text"], input[type="password"] {
+      background-color: #fff;
+      border-radius: 0px 3px 3px 0px;
+      color: #000;
+      margin-bottom: 1em;
+      padding: 0 16px;
+      width: 200px;
+  }
+  
+  #login form input[type="submit"] {
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background-color: #000000;
+    color: #eee;
+    font-weight: bold;
+    /* margin-bottom: 2em; */
+    text-transform: uppercase;
+    padding: 5px 10px;
+    height: 30px;
+  }
+  
+  #login form input[type="submit"]:hover {
+      background-color: #d44179;
+  }
+  
+  #login > p {
+      text-align: center;
+  }
+  
+  #login > p span {
+      padding-left: 5px;
+  }
+  .middle {
+    display: flex;
+    width: 600px;
+  }
